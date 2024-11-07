@@ -1,10 +1,10 @@
 # Hints for the Loops assignment
 ## Word Guessing Game
 
-<details><summary>I'm confused about how to get the letter in the same position from both words</summary>
+<details><summary>I'm confused about how to get the letter in the same position from both words</summary><p>
 
 Remember that the index represents the position of a character in a string.
-<details><summary>Hint #1</summary>
+<details><summary>Hint #1</summary><p>
 
 ```python
 word = "donut"
@@ -18,7 +18,7 @@ letter = word[0]
 print(letter)           # Output: d
 ```
 
-<details><summary>Hint #2</summary>
+<details><summary>Hint #2</summary><p>
 
 The index doesn't have to be specified, it can be in a variable
 
@@ -40,7 +40,7 @@ print(last_letter)      # Output: t
 # last_letter = word[5] will throw an index out of range error.
 ```
 
-<details><summary>Hint #3</summary>
+<details><summary>Hint #3</summary><p>
 
 ```python
 # Use the range function together with a for loop to access the index of each letter in a word
@@ -56,12 +56,17 @@ for index in range(len(word)):
     print(letter)
 ```
 
-<details><summary>Hint #4</summary>
+<details><summary>Hint #4</summary><p>
 
 Because you are requiring the user's guess to have the same number of letters as the secret word, index in the loop above can be used to get the letter at the same position in both the guess and the secret word.
 
-</details>
-</details>
-</details>
-</details>
-</details>
+<details><summary>Hint #5</summary><p>
+
+You don't need multiple for loops to make this work. One for loop using `for index in range(len(word)):` gets you the index. You will use that index inside this one for loop to retreive the letter for the guess, and use the same index again to get the letter from the secret word.
+
+</p></details>
+</p></details>
+</p></details>
+</p></details>
+</p></details>
+</p></details>
