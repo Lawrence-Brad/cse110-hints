@@ -1,7 +1,15 @@
 # Hints for the Loops assignment
 ## Word Guessing Game
 
-#### I'm confused about how to get the letter in the same position from both words
+### Using a loop to generate the initial hint
+<details><summary>Hint #1</summary><p>
+
+Use a loop to print one underscore for each letter.
+For more guidance on generating hints refer back to the Team Activity for Week 8. NOTE: If the class has not completed the team activity yet, do not read through it until after the team activity has been completed.
+
+</p></details>
+
+### I'm confused about how to get the letter in the same position from both words
 
 <details><summary>Hint #1</summary><p>
 Remember that the index represents the position of a character in a string.
@@ -69,3 +77,26 @@ You don't need multiple for loops to make this work. One for loop using `for ind
 </p></details>
 </p></details>
 </p></details>
+
+### Example from class for "a" or "an" based on the word provided.
+
+<details><summary>See Example</summary><p>
+
+```python
+vowels = "aeiou"
+noun = input("Please enter a noun? ")
+article = 'a'
+letter = noun[0]
+print(noun[0])
+if letter in vowels:
+    article = "an"
+print(f'You chose {article} {noun}')
+```
+
+</p></details>
+
+### General Help
+
+If you get stuck, it might be good to refer back to the preparation material for weeks 7 and 8 and consider which of those skills will help you accomplish the tasks for the assignment.
+
+The prove activities also showcase important skills for these assignments. But be sure to wait until after the class has completed the team activity before reviewing it for help.
